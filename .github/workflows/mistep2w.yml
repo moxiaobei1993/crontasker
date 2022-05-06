@@ -1,21 +1,14 @@
-# This is a basic workflow to help you get started with Actions
+name: mistep2w
 
-name: smzdm bot
-
-# Controls when the workflow will run
 on:
-  # Triggers the workflow on push or pull request events but only for the main branch
+
   push:
   schedule:
   #定时任务，每10分钟一次
     - cron: '20 5 * * *'
 
-
 jobs:
-
-
   build:
-  
     runs-on: ubuntu-latest
 
     # 1. 首先copy git仓库到虚拟机上
